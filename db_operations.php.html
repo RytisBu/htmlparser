@@ -1,0 +1,329 @@
+<!DOCTYPE HTML><html lang='en' dir='ltr' class='other other0'><meta charset="utf-8" /><meta name="robots" content="noindex,nofollow" /><meta http-equiv="X-UA-Compatible" content="IE=Edge"><style id="cfs-style">html{display: none;}</style><link rel="icon" href="favicon.ico" type="image/x-icon" /><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /><link rel="stylesheet" type="text/css" href="phpmyadmin.css.php?server=1&amp;token=92fcbd2ea72874c82a9a0d35034af7aa&amp;nocache=5870975702ltr" /><link rel="stylesheet" type="text/css" href="./themes/pmahomme/jquery/jquery-ui-1.9.2.custom.css" /><title>localhost:3306 / localhost / Doktorantura | phpMyAdmin 4.2.11</title><script type='text/javascript' src='js/whitelist.php?lang=en&amp;db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'></script><script type="text/javascript" src="js/get_scripts.js.php?token=92fcbd2ea72874c82a9a0d35034af7aa&amp;scripts[]=jquery/jquery-1.8.3.min.js&amp;scripts[]=ajax.js&amp;scripts[]=keyhandler.js&amp;scripts[]=jquery/jquery-ui-1.9.2.custom.min.js&amp;scripts[]=jquery/jquery.sprintf.js&amp;scripts[]=jquery/jquery.cookie.js&amp;scripts[]=jquery/jquery.mousewheel.js&amp;scripts[]=jquery/jquery.event.drag-2.2.js&amp;scripts[]=jquery/jquery-ui-timepicker-addon.js&amp;scripts[]=jquery/jquery.ba-hashchange-1.3.js&amp;scripts[]=jquery/jquery.debounce-1.0.5.js&amp;scripts[]=jquery/jquery.menuResizer-1.0.js&amp;scripts[]=cross_framing_protection.js&amp;scripts[]=rte.js&amp;scripts[]=tracekit/tracekit.js&amp;scripts[]=error_report.js&amp;scripts[]=doclinks.js&amp;scripts[]=functions.js&amp;scripts[]=navigation.js&amp;scripts[]=indexes.js&amp;scripts[]=common.js&amp;scripts[]=db_operations.js&amp;scripts[]=codemirror/lib/codemirror.js&amp;scripts[]=codemirror/mode/sql/sql.js&amp;scripts[]=codemirror/addon/runmode/runmode.js"></script><script type='text/javascript' src='js/messages.php?lang=en&amp;db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'></script><script type='text/javascript' src='js/get_image.js.php?theme=pmahomme'></script><script type="text/javascript">// <![CDATA[
+PMA_commonParams.setAll({common_query:"token=92fcbd2ea72874c82a9a0d35034af7aa",opendb_url:"db_structure.php",safari_browser:"0",querywindow_height:"400",querywindow_width:"600",collation_connection:"utf8mb4_unicode_ci",lang:"en",server:"1",table:"",db:"Doktorantura",token:"92fcbd2ea72874c82a9a0d35034af7aa",text_dir:"ltr",pma_absolute_uri:"http://localhost:3306/phpmyadmin/",pma_text_default_tab:"Browse",pma_text_left_default_tab:"Structure",confirm:"1"});
+AJAX.scriptHandler.add("jquery/jquery-1.8.3.min.js",0).add("whitelist.php?lang=en&amp;db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa",1).add("ajax.js",0).add("keyhandler.js",1).add("jquery/jquery-ui-1.9.2.custom.min.js",0).add("jquery/jquery.sprintf.js",0).add("jquery/jquery.cookie.js",0).add("jquery/jquery.mousewheel.js",0).add("jquery/jquery.event.drag-2.2.js",0).add("jquery/jquery-ui-timepicker-addon.js",0).add("jquery/jquery.ba-hashchange-1.3.js",0).add("jquery/jquery.debounce-1.0.5.js",0).add("jquery/jquery.menuResizer-1.0.js",0).add("cross_framing_protection.js",0).add("rte.js",1).add("tracekit/tracekit.js",1).add("error_report.js",1).add("messages.php?lang=en&amp;db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa",0).add("get_image.js.php?theme=pmahomme",0).add("doclinks.js",1).add("functions.js",1).add("navigation.js",0).add("indexes.js",1).add("common.js",1).add("db_operations.js",1).add("codemirror/lib/codemirror.js",0).add("codemirror/mode/sql/sql.js",0).add("codemirror/addon/runmode/runmode.js",0);
+$(function() {AJAX.fireOnload("whitelist.php?lang=en&amp;db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa");AJAX.fireOnload("keyhandler.js");AJAX.fireOnload("rte.js");AJAX.fireOnload("tracekit/tracekit.js");AJAX.fireOnload("error_report.js");AJAX.fireOnload("doclinks.js");AJAX.fireOnload("functions.js");AJAX.fireOnload("indexes.js");AJAX.fireOnload("common.js");AJAX.fireOnload("db_operations.js");});
+// ]]></script></head><body><div id="pma_navigation"><div id="pma_navigation_resizer"></div><div id="pma_navigation_collapser"></div><div id="pma_navigation_content"><div id="pma_navigation_header"><a class="hide navigation_url" href="navigation.php?ajax_request=1&amp;token=92fcbd2ea72874c82a9a0d35034af7aa"></a><!-- LOGO START --><div id="pmalogo">    <a href="index.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa&amp;goto=db_operations.php"><img src="./themes/pmahomme/img/logo_left.png" alt="phpMyAdmin" id="imgpmalogo" /></a></div><!-- LOGO END --><!-- LINKS START --><div id="navipanellinks"><a href="index.php?token=92fcbd2ea72874c82a9a0d35034af7aa" title="Home"><img src="themes/dot.gif" title="Home" alt="Home" class="icon ic_b_home" /></a><a href="querywindow.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa&amp;no_js=true" id="pma_open_querywindow" class="disableAjax" title="Query window"><img src="themes/dot.gif" title="Query window" alt="Query window" class="icon ic_b_selboard" /></a><a href="./doc/html/index.html" target="documentation" title="phpMyAdmin documentation"><img src="themes/dot.gif" title="phpMyAdmin documentation" alt="phpMyAdmin documentation" class="icon ic_b_docs" /></a><a href="./url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.6%2Fen%2Findex.html" target="mysql_doc"><img src="themes/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_sqlhelp" /></a><a href="#" id="pma_navigation_reload" title="Reload navigation panel"><img src="themes/dot.gif" title="Reload navigation panel" alt="Reload navigation panel" class="icon ic_s_reload" /></a></div><!-- LINKS ENDS --><img src="./themes/pmahomme/img/ajax_clock_small.gif" title="Loading…" alt="Loading…" style="visibility: hidden; display:none" class="throbber" /></div><div id="pma_navigation_tree" class="list_container highlight"><div id="pma_quick_warp"><div class="drop_list"><span title="Recent tables" class="drop_button">Recent</span><ul id="pma_recent_list"><li class="warp_link"><a href="sql.php?db=Doktorantura&amp;table=Vadovai&amp;token=92fcbd2ea72874c82a9a0d35034af7aa">`Doktorantura`.`Vadovai`</a></li><li class="warp_link"><a href="sql.php?db=Doktorantura&amp;table=Grupes&amp;token=92fcbd2ea72874c82a9a0d35034af7aa">`Doktorantura`.`Grupes`</a></li><li class="warp_link"><a href="sql.php?db=Doktorantura&amp;table=Doktorantai&amp;token=92fcbd2ea72874c82a9a0d35034af7aa">`Doktorantura`.`Doktorantai`</a></li><li class="warp_link"><a href="sql.php?db=Doktorantura&amp;table=Disertacijos&amp;token=92fcbd2ea72874c82a9a0d35034af7aa">`Doktorantura`.`Disertacijos`</a></li><li class="warp_link"><a href="sql.php?db=Forge&amp;table=Users&amp;token=92fcbd2ea72874c82a9a0d35034af7aa">`Forge`.`Users`</a></li><li class="warp_link"><a href="sql.php?db=didika_work25&amp;table=add_money_history&amp;token=92fcbd2ea72874c82a9a0d35034af7aa">`didika_work25`.`add_money_history`</a></li><li class="warp_link"><a href="sql.php?db=didika_work25&amp;table=advertiser_requests&amp;token=92fcbd2ea72874c82a9a0d35034af7aa">`didika_work25`.`advertiser_requests`</a></li><li class="warp_link"><a href="sql.php?db=didika_work25&amp;table=users&amp;token=92fcbd2ea72874c82a9a0d35034af7aa">`didika_work25`.`users`</a></li><li class="warp_link"><a href="sql.php?db=didika_work25&amp;table=user_log&amp;token=92fcbd2ea72874c82a9a0d35034af7aa">`didika_work25`.`user_log`</a></li><li class="warp_link"><a href="sql.php?db=didika_work25&amp;table=ban_reason&amp;token=92fcbd2ea72874c82a9a0d35034af7aa">`didika_work25`.`ban_reason`</a></li></ul></div><div class="drop_list"><span title="Favorite tables" class="drop_button">Favorites</span><ul id="pma_favorite_list"><li class="warp_link">There are no favorite tables.</li></ul></div><div class="clearfloat"></div></div><div class="clearfloat"></div><div id='pma_navigation_tree_content'><ul><li class='first new_database italics'><div class='block'><i class='first'></i></div><div class='block'><a href='server_databases.php?server=1&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'><img src="themes/dot.gif" title="" alt="" class="icon ic_b_newdb" /></a></div><a class='hover_show_full' href='server_databases.php?server=1&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'>New</a><div class="clearfloat"></div></li><li class='database'><div class='block'><i></i><b></b><a class='expander' href='#'><span class='hide aPath'>cm9vdA==.Y2Rjb2w=</span><span class='hide vPath'>cm9vdA==.Y2Rjb2w=</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block'><a href='db_operations.php?server=1&amp;db=cdcol&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=cdcol&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'>cdcol</a><div class="clearfloat"></div></li><li class='database'><div class='block'><i></i><b></b><a class='expander' href='#'><span class='hide aPath'>cm9vdA==.ZGlkaWthX3dvcmsyNQ==</span><span class='hide vPath'>cm9vdA==.ZGlkaWthX3dvcmsyNQ==</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block'><a href='db_operations.php?server=1&amp;db=didika_work25&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=didika_work25&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'>didika_work25</a><div class="clearfloat"></div></li><li class='database'><div class='block'><i></i><b></b><a class='expander' href='#'><span class='hide aPath'>cm9vdA==.RG9rdG9yYW50dXJh</span><span class='hide vPath'>cm9vdA==.RG9rdG9yYW50dXJh</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block'><a href='db_operations.php?server=1&amp;db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'>Doktorantura</a><div class="clearfloat"></div></li><li class='database'><div class='block'><i></i><b></b><a class='expander' href='#'><span class='hide aPath'>cm9vdA==.Rm9yZ2U=</span><span class='hide vPath'>cm9vdA==.Rm9yZ2U=</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block'><a href='db_operations.php?server=1&amp;db=Forge&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=Forge&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'>Forge</a><div class="clearfloat"></div></li><li class='database'><div class='block'><i></i><b></b><a class='expander' href='#'><span class='hide aPath'>cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class='hide vPath'>cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block'><a href='db_operations.php?server=1&amp;db=information_schema&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=information_schema&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'>information_schema</a><div class="clearfloat"></div></li><li class='database'><div class='block'><i></i><b></b><a class='expander' href='#'><span class='hide aPath'>cm9vdA==.bXlzcWw=</span><span class='hide vPath'>cm9vdA==.bXlzcWw=</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block'><a href='db_operations.php?server=1&amp;db=mysql&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=mysql&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'>mysql</a><div class="clearfloat"></div></li><li class='database'><div class='block'><i></i><b></b><a class='expander' href='#'><span class='hide aPath'>cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class='hide vPath'>cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block'><a href='db_operations.php?server=1&amp;db=performance_schema&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=performance_schema&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'>performance_schema</a><div class="clearfloat"></div></li><li class='database'><div class='block'><i></i><b></b><a class='expander' href='#'><span class='hide aPath'>cm9vdA==.cGhwbXlhZG1pbg==</span><span class='hide vPath'>cm9vdA==.cGhwbXlhZG1pbg==</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block'><a href='db_operations.php?server=1&amp;db=phpmyadmin&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=phpmyadmin&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'>phpmyadmin</a><div class="clearfloat"></div></li><li class='last database'><div class='block'><i></i><a class='expander' href='#'><span class='hide aPath'>cm9vdA==.dGVzdA==</span><span class='hide vPath'>cm9vdA==.dGVzdA==</span><span class='hide pos'>0</span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus" /></a></div><div class='block'><a href='db_operations.php?server=1&amp;db=test&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db" /></a></div><a class='hover_show_full' href='db_structure.php?server=1&amp;db=test&amp;token=92fcbd2ea72874c82a9a0d35034af7aa'>test</a><div class="clearfloat"></div></li></ul></div></div></div></div><noscript><div class="error"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_error" /> Javascript must be enabled past this point!</div></noscript><div id='floating_menubar'></div><div id='serverinfo'><img src="themes/dot.gif" title="" alt="" class="icon ic_s_host item" /><a href="index.php?token=92fcbd2ea72874c82a9a0d35034af7aa" class="item">Server: localhost</a><span class='separator item'>&nbsp;»</span><img src="themes/dot.gif" title="" alt="" class="icon ic_s_db item" /><a href="db_structure.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" class="item">Database: Doktorantura</a><div class="clearfloat"></div></div><div id="topmenucontainer" class="menucontainer"><ul id="topmenu"  class="resizable-menu"><li><a class="tab" href="db_structure.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" ><img src="themes/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props" /> Structure</a></li><li><a class="tab" href="db_sql.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" ><img src="themes/dot.gif" title="SQL" alt="SQL" class="icon ic_b_sql" /> SQL</a></li><li><a class="tab" href="db_search.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" ><img src="themes/dot.gif" title="Search" alt="Search" class="icon ic_b_search" /> Search</a></li><li><a class="tab" href="db_qbe.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" ><img src="themes/dot.gif" title="Query" alt="Query" class="icon ic_s_db" /> Query</a></li><li><a class="tab" href="db_export.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" ><img src="themes/dot.gif" title="Export" alt="Export" class="icon ic_b_export" /> Export</a></li><li><a class="tab" href="db_import.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" ><img src="themes/dot.gif" title="Import" alt="Import" class="icon ic_b_import" /> Import</a></li><li class="active"><a class="tabactive" href="db_operations.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" ><img src="themes/dot.gif" title="Operations" alt="Operations" class="icon ic_b_tblops" /> Operations</a></li><li><a class="tab" href="server_privileges.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa&amp;checkprivsdb=Doktorantura&amp;viewing_mode=db" ><img src="themes/dot.gif" title="Privileges" alt="Privileges" class="icon ic_s_rights" /> Privileges</a></li><li><a class="tab" href="db_routines.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" ><img src="themes/dot.gif" title="Routines" alt="Routines" class="icon ic_b_routines" /> Routines</a></li><li><a class="tab" href="db_events.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" ><img src="themes/dot.gif" title="Events" alt="Events" class="icon ic_b_events" /> Events</a></li><li><a class="tab" href="db_triggers.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" ><img src="themes/dot.gif" title="Triggers" alt="Triggers" class="icon ic_b_triggers" /> Triggers</a></li><li><a class="tab" href="db_tracking.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" ><img src="themes/dot.gif" title="Tracking" alt="Tracking" class="icon ic_eye" /> Tracking</a></li><li><a class="tab" href="pmd_general.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" ><img src="themes/dot.gif" title="Designer" alt="Designer" class="icon ic_b_relations" /> Designer</a></li><div class="clearfloat"></div></ul>
+</div>
+<a id="goto_pagetop" href="#" title="Click on the bar to scroll to top of page"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_top" /></a><div id="page_content"><div id="result_query" style="text-align: left">
+<div class="error"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_error" /> The phpMyAdmin configuration storage has been deactivated. To find out why click <a href="http://localhost:3306/phpmyadmin/chk_rel.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa&amp;goto=db_operations.php">here</a>.</div></div><br class="clearfloat" /><div id="boxContainer" data-box-width="300"><div class="operations_half_width"><form method="post" action="db_operations.php" id="formDatabaseComment"><input type="hidden" name="db" value="Doktorantura" /><input type="hidden" name="token" value="92fcbd2ea72874c82a9a0d35034af7aa" /><fieldset><legend><img class="icon ic_b_comment" src="themes/dot.gif" alt="" />Database comment:</legend><input type="text" name="comment" class="textfield" size="30"value="" /></fieldset><fieldset class="tblFooters"><input type="submit" value="Go" /></fieldset></form></div><div class="operations_half_width"><form id="create_table_form_minimal" method="post" action="tbl_create.php"><fieldset><legend><img src="themes/dot.gif" title="" alt="" class="icon ic_b_newtbl" />Create table </legend><input type="hidden" name="db" value="Doktorantura" /><input type="hidden" name="token" value="92fcbd2ea72874c82a9a0d35034af7aa" /><div class="formelement">Name:  <input type="text" name="table" maxlength="64" size="30" required="required" /> </div>  <div class="formelement">Number of columns:  <input type="number" min="1" name="num_fields" value="4" required="required" /> </div>  <div class="clearfloat"></div></fieldset><fieldset class="tblFooters">   <input type="submit" value="Go" /></fieldset></form></div><div class="operations_half_width"><form id="rename_db_form" class="ajax" method="post" action="db_operations.php" onsubmit="return emptyFormElements(this, 'newname')"><input type="hidden" name="db_collation" value="latin1_swedish_ci" />
+<input type="hidden" name="what" value="data" /><input type="hidden" name="db_rename" value="true" /><input type="hidden" name="db" value="Doktorantura" /><input type="hidden" name="token" value="92fcbd2ea72874c82a9a0d35034af7aa" /><fieldset><legend><img src="themes/dot.gif" title="" alt="" class="icon ic_b_edit" />Rename database to:</legend><input id="new_db_name" type="text" name="newname" size="30" class="textfield" value="" required="required" /></fieldset><fieldset class="tblFooters"><input id="rename_db_input" type="submit" value="Go" /></fieldset></form></div><div class="operations_half_width"><fieldset class="caution"><legend><img src="themes/dot.gif" title="" alt="" class="icon ic_b_deltbl" />Remove database</legend><ul><li><a href="sql.php?sql_query=DROP+DATABASE+%60Doktorantura%60&amp;back=db_operations.php&amp;goto=index.php&amp;reload=1&amp;purge=1&amp;message_to_show=Database+%60Doktorantura%60+has+been+dropped.&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" id="drop_db_anchor" class="ajax">Drop the database (DROP)</a><a href="./url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.6%2Fen%2Fdrop-database.html" target="mysql_doc"><img src="themes/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" /></a></li></ul></fieldset></div><div class="operations_half_width clearfloat"><form id="copy_db_form" class="ajax" method="post" action="db_operations.php"onsubmit="return emptyFormElements(this, 'newname')"><input type="hidden" name="db_collation" value="latin1_swedish_ci" />
+<input type="hidden" name="db_copy" value="true" />
+<input type="hidden" name="db" value="Doktorantura" /><input type="hidden" name="token" value="92fcbd2ea72874c82a9a0d35034af7aa" /><fieldset><legend><img src="themes/dot.gif" title="" alt="" class="icon ic_b_edit" />Copy database to:</legend><input type="text" name="newname" size="30" class="textfield" value="" required="required" /><br /><input type="radio" name="what" id="what_structure" value="structure" />
+<label for="what_structure">Structure only</label><br />
+<input type="radio" name="what" id="what_data" value="data" checked="checked" />
+<label for="what_data">Structure and data</label><br />
+<input type="radio" name="what" id="what_dataonly" value="dataonly" />
+<label for="what_dataonly">Data only</label><br />
+<input type="checkbox" name="create_database_before_copying" value="1" id="checkbox_create_database_before_copying"checked="checked" /><label for="checkbox_create_database_before_copying">CREATE DATABASE before copying</label><br /><input type="checkbox" name="drop_if_exists" value="true"id="checkbox_drop" /><label for="checkbox_drop">Add DROP TABLE / DROP VIEW</label><br /><input type="checkbox" name="sql_auto_increment" value="1" checked="checked" id="checkbox_auto_increment" /><label for="checkbox_auto_increment">Add AUTO_INCREMENT value</label><br /><input type="checkbox" name="add_constraints" value="1"id="checkbox_constraints" /><label for="checkbox_constraints">Add constraints</label><br /><input type="checkbox" name="switch_to_new" value="true"id="checkbox_switch"/><label for="checkbox_switch">Switch to copied database</label></fieldset><fieldset class="tblFooters"><input type="submit" name="submit_copy" value="Go" /></fieldset></form></div><div class="operations_half_width"><form id="change_db_charset_form" class="ajax" method="post" action="db_operations.php"><input type="hidden" name="db" value="Doktorantura" /><input type="hidden" name="token" value="92fcbd2ea72874c82a9a0d35034af7aa" /><fieldset>
+    <legend><img src="themes/dot.gif" title="" alt="" class="icon ic_s_asci" /><label for="select_db_collation">Collation:</label>
+</legend>
+<select lang="en" dir="ltr" name="db_collation" id="select_db_collation">
+<option value=""></option>
+<optgroup label="armscii8" title="ARMSCII-8 Armenian">
+<option value="armscii8_bin" title="Armenian, Binary">armscii8_bin</option>
+<option value="armscii8_general_ci" title="Armenian, case-insensitive">armscii8_general_ci</option>
+</optgroup>
+<optgroup label="ascii" title="US ASCII">
+<option value="ascii_bin" title="West European (multilingual), Binary">ascii_bin</option>
+<option value="ascii_general_ci" title="West European (multilingual), case-insensitive">ascii_general_ci</option>
+</optgroup>
+<optgroup label="big5" title="Big5 Traditional Chinese">
+<option value="big5_bin" title="Traditional Chinese, Binary">big5_bin</option>
+<option value="big5_chinese_ci" title="Traditional Chinese, case-insensitive">big5_chinese_ci</option>
+</optgroup>
+<optgroup label="binary" title="Binary pseudo charset">
+<option value="binary" title="Binary">binary</option>
+</optgroup>
+<optgroup label="cp1250" title="Windows Central European">
+<option value="cp1250_bin" title="Central European (multilingual), Binary">cp1250_bin</option>
+<option value="cp1250_croatian_ci" title="Croatian, case-insensitive">cp1250_croatian_ci</option>
+<option value="cp1250_czech_cs" title="Czech, case-sensitive">cp1250_czech_cs</option>
+<option value="cp1250_general_ci" title="Central European (multilingual), case-insensitive">cp1250_general_ci</option>
+<option value="cp1250_polish_ci" title="Polish, case-insensitive">cp1250_polish_ci</option>
+</optgroup>
+<optgroup label="cp1251" title="Windows Cyrillic">
+<option value="cp1251_bin" title="Cyrillic (multilingual), Binary">cp1251_bin</option>
+<option value="cp1251_bulgarian_ci" title="Bulgarian, case-insensitive">cp1251_bulgarian_ci</option>
+<option value="cp1251_general_ci" title="Cyrillic (multilingual), case-insensitive">cp1251_general_ci</option>
+<option value="cp1251_general_cs" title="Cyrillic (multilingual), case-sensitive">cp1251_general_cs</option>
+<option value="cp1251_ukrainian_ci" title="Ukrainian, case-insensitive">cp1251_ukrainian_ci</option>
+</optgroup>
+<optgroup label="cp1256" title="Windows Arabic">
+<option value="cp1256_bin" title="Arabic, Binary">cp1256_bin</option>
+<option value="cp1256_general_ci" title="Arabic, case-insensitive">cp1256_general_ci</option>
+</optgroup>
+<optgroup label="cp1257" title="Windows Baltic">
+<option value="cp1257_bin" title="Baltic (multilingual), Binary">cp1257_bin</option>
+<option value="cp1257_general_ci" title="Baltic (multilingual), case-insensitive">cp1257_general_ci</option>
+<option value="cp1257_lithuanian_ci" title="Lithuanian, case-insensitive">cp1257_lithuanian_ci</option>
+</optgroup>
+<optgroup label="cp850" title="DOS West European">
+<option value="cp850_bin" title="West European (multilingual), Binary">cp850_bin</option>
+<option value="cp850_general_ci" title="West European (multilingual), case-insensitive">cp850_general_ci</option>
+</optgroup>
+<optgroup label="cp852" title="DOS Central European">
+<option value="cp852_bin" title="Central European (multilingual), Binary">cp852_bin</option>
+<option value="cp852_general_ci" title="Central European (multilingual), case-insensitive">cp852_general_ci</option>
+</optgroup>
+<optgroup label="cp866" title="DOS Russian">
+<option value="cp866_bin" title="Russian, Binary">cp866_bin</option>
+<option value="cp866_general_ci" title="Russian, case-insensitive">cp866_general_ci</option>
+</optgroup>
+<optgroup label="cp932" title="SJIS for Windows Japanese">
+<option value="cp932_bin" title="Japanese, Binary">cp932_bin</option>
+<option value="cp932_japanese_ci" title="Japanese, case-insensitive">cp932_japanese_ci</option>
+</optgroup>
+<optgroup label="dec8" title="DEC West European">
+<option value="dec8_bin" title="West European (multilingual), Binary">dec8_bin</option>
+<option value="dec8_swedish_ci" title="Swedish, case-insensitive">dec8_swedish_ci</option>
+</optgroup>
+<optgroup label="eucjpms" title="UJIS for Windows Japanese">
+<option value="eucjpms_bin" title="Japanese, Binary">eucjpms_bin</option>
+<option value="eucjpms_japanese_ci" title="Japanese, case-insensitive">eucjpms_japanese_ci</option>
+</optgroup>
+<optgroup label="euckr" title="EUC-KR Korean">
+<option value="euckr_bin" title="Korean, Binary">euckr_bin</option>
+<option value="euckr_korean_ci" title="Korean, case-insensitive">euckr_korean_ci</option>
+</optgroup>
+<optgroup label="gb2312" title="GB2312 Simplified Chinese">
+<option value="gb2312_bin" title="Simplified Chinese, Binary">gb2312_bin</option>
+<option value="gb2312_chinese_ci" title="Simplified Chinese, case-insensitive">gb2312_chinese_ci</option>
+</optgroup>
+<optgroup label="gbk" title="GBK Simplified Chinese">
+<option value="gbk_bin" title="Simplified Chinese, Binary">gbk_bin</option>
+<option value="gbk_chinese_ci" title="Simplified Chinese, case-insensitive">gbk_chinese_ci</option>
+</optgroup>
+<optgroup label="geostd8" title="GEOSTD8 Georgian">
+<option value="geostd8_bin" title="Georgian, Binary">geostd8_bin</option>
+<option value="geostd8_general_ci" title="Georgian, case-insensitive">geostd8_general_ci</option>
+</optgroup>
+<optgroup label="greek" title="ISO 8859-7 Greek">
+<option value="greek_bin" title="Greek, Binary">greek_bin</option>
+<option value="greek_general_ci" title="Greek, case-insensitive">greek_general_ci</option>
+</optgroup>
+<optgroup label="hebrew" title="ISO 8859-8 Hebrew">
+<option value="hebrew_bin" title="Hebrew, Binary">hebrew_bin</option>
+<option value="hebrew_general_ci" title="Hebrew, case-insensitive">hebrew_general_ci</option>
+</optgroup>
+<optgroup label="hp8" title="HP West European">
+<option value="hp8_bin" title="West European (multilingual), Binary">hp8_bin</option>
+<option value="hp8_english_ci" title="English, case-insensitive">hp8_english_ci</option>
+</optgroup>
+<optgroup label="keybcs2" title="DOS Kamenicky Czech-Slovak">
+<option value="keybcs2_bin" title="Czech-Slovak, Binary">keybcs2_bin</option>
+<option value="keybcs2_general_ci" title="Czech-Slovak, case-insensitive">keybcs2_general_ci</option>
+</optgroup>
+<optgroup label="koi8r" title="KOI8-R Relcom Russian">
+<option value="koi8r_bin" title="Russian, Binary">koi8r_bin</option>
+<option value="koi8r_general_ci" title="Russian, case-insensitive">koi8r_general_ci</option>
+</optgroup>
+<optgroup label="koi8u" title="KOI8-U Ukrainian">
+<option value="koi8u_bin" title="Ukrainian, Binary">koi8u_bin</option>
+<option value="koi8u_general_ci" title="Ukrainian, case-insensitive">koi8u_general_ci</option>
+</optgroup>
+<optgroup label="latin1" title="cp1252 West European">
+<option value="latin1_bin" title="West European (multilingual), Binary">latin1_bin</option>
+<option value="latin1_danish_ci" title="Danish, case-insensitive">latin1_danish_ci</option>
+<option value="latin1_general_ci" title="West European (multilingual), case-insensitive">latin1_general_ci</option>
+<option value="latin1_general_cs" title="West European (multilingual), case-sensitive">latin1_general_cs</option>
+<option value="latin1_german1_ci" title="German (dictionary), case-insensitive">latin1_german1_ci</option>
+<option value="latin1_german2_ci" title="German (phone book), case-insensitive">latin1_german2_ci</option>
+<option value="latin1_spanish_ci" title="Spanish, case-insensitive">latin1_spanish_ci</option>
+<option value="latin1_swedish_ci" title="Swedish, case-insensitive" selected="selected">latin1_swedish_ci</option>
+</optgroup>
+<optgroup label="latin2" title="ISO 8859-2 Central European">
+<option value="latin2_bin" title="Central European (multilingual), Binary">latin2_bin</option>
+<option value="latin2_croatian_ci" title="Croatian, case-insensitive">latin2_croatian_ci</option>
+<option value="latin2_czech_cs" title="Czech, case-sensitive">latin2_czech_cs</option>
+<option value="latin2_general_ci" title="Central European (multilingual), case-insensitive">latin2_general_ci</option>
+<option value="latin2_hungarian_ci" title="Hungarian, case-insensitive">latin2_hungarian_ci</option>
+</optgroup>
+<optgroup label="latin5" title="ISO 8859-9 Turkish">
+<option value="latin5_bin" title="Turkish, Binary">latin5_bin</option>
+<option value="latin5_turkish_ci" title="Turkish, case-insensitive">latin5_turkish_ci</option>
+</optgroup>
+<optgroup label="latin7" title="ISO 8859-13 Baltic">
+<option value="latin7_bin" title="Baltic (multilingual), Binary">latin7_bin</option>
+<option value="latin7_estonian_cs" title="Estonian, case-sensitive">latin7_estonian_cs</option>
+<option value="latin7_general_ci" title="Baltic (multilingual), case-insensitive">latin7_general_ci</option>
+<option value="latin7_general_cs" title="Baltic (multilingual), case-sensitive">latin7_general_cs</option>
+</optgroup>
+<optgroup label="macce" title="Mac Central European">
+<option value="macce_bin" title="Central European (multilingual), Binary">macce_bin</option>
+<option value="macce_general_ci" title="Central European (multilingual), case-insensitive">macce_general_ci</option>
+</optgroup>
+<optgroup label="macroman" title="Mac West European">
+<option value="macroman_bin" title="West European (multilingual), Binary">macroman_bin</option>
+<option value="macroman_general_ci" title="West European (multilingual), case-insensitive">macroman_general_ci</option>
+</optgroup>
+<optgroup label="sjis" title="Shift-JIS Japanese">
+<option value="sjis_bin" title="Japanese, Binary">sjis_bin</option>
+<option value="sjis_japanese_ci" title="Japanese, case-insensitive">sjis_japanese_ci</option>
+</optgroup>
+<optgroup label="swe7" title="7bit Swedish">
+<option value="swe7_bin" title="Swedish, Binary">swe7_bin</option>
+<option value="swe7_swedish_ci" title="Swedish, case-insensitive">swe7_swedish_ci</option>
+</optgroup>
+<optgroup label="tis620" title="TIS620 Thai">
+<option value="tis620_bin" title="Thai, Binary">tis620_bin</option>
+<option value="tis620_thai_ci" title="Thai, case-insensitive">tis620_thai_ci</option>
+</optgroup>
+<optgroup label="ucs2" title="UCS-2 Unicode">
+<option value="ucs2_bin" title="Unicode (multilingual), Binary">ucs2_bin</option>
+<option value="ucs2_croatian_ci" title="Croatian, case-insensitive">ucs2_croatian_ci</option>
+<option value="ucs2_czech_ci" title="Czech, case-insensitive">ucs2_czech_ci</option>
+<option value="ucs2_danish_ci" title="Danish, case-insensitive">ucs2_danish_ci</option>
+<option value="ucs2_esperanto_ci" title="Esperanto, case-insensitive">ucs2_esperanto_ci</option>
+<option value="ucs2_estonian_ci" title="Estonian, case-insensitive">ucs2_estonian_ci</option>
+<option value="ucs2_general_ci" title="Unicode (multilingual), case-insensitive">ucs2_general_ci</option>
+<option value="ucs2_general_mysql500_ci" title="Unicode (multilingual)">ucs2_general_mysql500_ci</option>
+<option value="ucs2_german2_ci" title="German (phone book), case-insensitive">ucs2_german2_ci</option>
+<option value="ucs2_hungarian_ci" title="Hungarian, case-insensitive">ucs2_hungarian_ci</option>
+<option value="ucs2_icelandic_ci" title="Icelandic, case-insensitive">ucs2_icelandic_ci</option>
+<option value="ucs2_latvian_ci" title="Latvian, case-insensitive">ucs2_latvian_ci</option>
+<option value="ucs2_lithuanian_ci" title="Lithuanian, case-insensitive">ucs2_lithuanian_ci</option>
+<option value="ucs2_persian_ci" title="Persian, case-insensitive">ucs2_persian_ci</option>
+<option value="ucs2_polish_ci" title="Polish, case-insensitive">ucs2_polish_ci</option>
+<option value="ucs2_roman_ci" title="West European, case-insensitive">ucs2_roman_ci</option>
+<option value="ucs2_romanian_ci" title="Romanian, case-insensitive">ucs2_romanian_ci</option>
+<option value="ucs2_sinhala_ci" title="unknown, case-insensitive">ucs2_sinhala_ci</option>
+<option value="ucs2_slovak_ci" title="Slovak, case-insensitive">ucs2_slovak_ci</option>
+<option value="ucs2_slovenian_ci" title="Slovenian, case-insensitive">ucs2_slovenian_ci</option>
+<option value="ucs2_spanish2_ci" title="Traditional Spanish, case-insensitive">ucs2_spanish2_ci</option>
+<option value="ucs2_spanish_ci" title="Spanish, case-insensitive">ucs2_spanish_ci</option>
+<option value="ucs2_swedish_ci" title="Swedish, case-insensitive">ucs2_swedish_ci</option>
+<option value="ucs2_turkish_ci" title="Turkish, case-insensitive">ucs2_turkish_ci</option>
+<option value="ucs2_unicode_520_ci" title="Unicode (multilingual)">ucs2_unicode_520_ci</option>
+<option value="ucs2_unicode_ci" title="Unicode (multilingual), case-insensitive">ucs2_unicode_ci</option>
+<option value="ucs2_vietnamese_ci" title="unknown, case-insensitive">ucs2_vietnamese_ci</option>
+</optgroup>
+<optgroup label="ujis" title="EUC-JP Japanese">
+<option value="ujis_bin" title="Japanese, Binary">ujis_bin</option>
+<option value="ujis_japanese_ci" title="Japanese, case-insensitive">ujis_japanese_ci</option>
+</optgroup>
+<optgroup label="utf16" title="UTF-16 Unicode">
+<option value="utf16_bin" title="unknown, Binary">utf16_bin</option>
+<option value="utf16_croatian_ci" title="Croatian, case-insensitive">utf16_croatian_ci</option>
+<option value="utf16_czech_ci" title="Czech, case-insensitive">utf16_czech_ci</option>
+<option value="utf16_danish_ci" title="Danish, case-insensitive">utf16_danish_ci</option>
+<option value="utf16_esperanto_ci" title="Esperanto, case-insensitive">utf16_esperanto_ci</option>
+<option value="utf16_estonian_ci" title="Estonian, case-insensitive">utf16_estonian_ci</option>
+<option value="utf16_general_ci" title="unknown, case-insensitive">utf16_general_ci</option>
+<option value="utf16_german2_ci" title="German (phone book), case-insensitive">utf16_german2_ci</option>
+<option value="utf16_hungarian_ci" title="Hungarian, case-insensitive">utf16_hungarian_ci</option>
+<option value="utf16_icelandic_ci" title="Icelandic, case-insensitive">utf16_icelandic_ci</option>
+<option value="utf16_latvian_ci" title="Latvian, case-insensitive">utf16_latvian_ci</option>
+<option value="utf16_lithuanian_ci" title="Lithuanian, case-insensitive">utf16_lithuanian_ci</option>
+<option value="utf16_persian_ci" title="Persian, case-insensitive">utf16_persian_ci</option>
+<option value="utf16_polish_ci" title="Polish, case-insensitive">utf16_polish_ci</option>
+<option value="utf16_roman_ci" title="West European, case-insensitive">utf16_roman_ci</option>
+<option value="utf16_romanian_ci" title="Romanian, case-insensitive">utf16_romanian_ci</option>
+<option value="utf16_sinhala_ci" title="unknown, case-insensitive">utf16_sinhala_ci</option>
+<option value="utf16_slovak_ci" title="Slovak, case-insensitive">utf16_slovak_ci</option>
+<option value="utf16_slovenian_ci" title="Slovenian, case-insensitive">utf16_slovenian_ci</option>
+<option value="utf16_spanish2_ci" title="Traditional Spanish, case-insensitive">utf16_spanish2_ci</option>
+<option value="utf16_spanish_ci" title="Spanish, case-insensitive">utf16_spanish_ci</option>
+<option value="utf16_swedish_ci" title="Swedish, case-insensitive">utf16_swedish_ci</option>
+<option value="utf16_turkish_ci" title="Turkish, case-insensitive">utf16_turkish_ci</option>
+<option value="utf16_unicode_520_ci" title="Unicode (multilingual)">utf16_unicode_520_ci</option>
+<option value="utf16_unicode_ci" title="Unicode (multilingual), case-insensitive">utf16_unicode_ci</option>
+<option value="utf16_vietnamese_ci" title="unknown, case-insensitive">utf16_vietnamese_ci</option>
+</optgroup>
+<optgroup label="utf16le" title="UTF-16LE Unicode">
+<option value="utf16le_bin" title="unknown, Binary">utf16le_bin</option>
+<option value="utf16le_general_ci" title="unknown, case-insensitive">utf16le_general_ci</option>
+</optgroup>
+<optgroup label="utf32" title="UTF-32 Unicode">
+<option value="utf32_bin" title="unknown, Binary">utf32_bin</option>
+<option value="utf32_croatian_ci" title="Croatian, case-insensitive">utf32_croatian_ci</option>
+<option value="utf32_czech_ci" title="Czech, case-insensitive">utf32_czech_ci</option>
+<option value="utf32_danish_ci" title="Danish, case-insensitive">utf32_danish_ci</option>
+<option value="utf32_esperanto_ci" title="Esperanto, case-insensitive">utf32_esperanto_ci</option>
+<option value="utf32_estonian_ci" title="Estonian, case-insensitive">utf32_estonian_ci</option>
+<option value="utf32_general_ci" title="unknown, case-insensitive">utf32_general_ci</option>
+<option value="utf32_german2_ci" title="German (phone book), case-insensitive">utf32_german2_ci</option>
+<option value="utf32_hungarian_ci" title="Hungarian, case-insensitive">utf32_hungarian_ci</option>
+<option value="utf32_icelandic_ci" title="Icelandic, case-insensitive">utf32_icelandic_ci</option>
+<option value="utf32_latvian_ci" title="Latvian, case-insensitive">utf32_latvian_ci</option>
+<option value="utf32_lithuanian_ci" title="Lithuanian, case-insensitive">utf32_lithuanian_ci</option>
+<option value="utf32_persian_ci" title="Persian, case-insensitive">utf32_persian_ci</option>
+<option value="utf32_polish_ci" title="Polish, case-insensitive">utf32_polish_ci</option>
+<option value="utf32_roman_ci" title="West European, case-insensitive">utf32_roman_ci</option>
+<option value="utf32_romanian_ci" title="Romanian, case-insensitive">utf32_romanian_ci</option>
+<option value="utf32_sinhala_ci" title="unknown, case-insensitive">utf32_sinhala_ci</option>
+<option value="utf32_slovak_ci" title="Slovak, case-insensitive">utf32_slovak_ci</option>
+<option value="utf32_slovenian_ci" title="Slovenian, case-insensitive">utf32_slovenian_ci</option>
+<option value="utf32_spanish2_ci" title="Traditional Spanish, case-insensitive">utf32_spanish2_ci</option>
+<option value="utf32_spanish_ci" title="Spanish, case-insensitive">utf32_spanish_ci</option>
+<option value="utf32_swedish_ci" title="Swedish, case-insensitive">utf32_swedish_ci</option>
+<option value="utf32_turkish_ci" title="Turkish, case-insensitive">utf32_turkish_ci</option>
+<option value="utf32_unicode_520_ci" title="Unicode (multilingual)">utf32_unicode_520_ci</option>
+<option value="utf32_unicode_ci" title="Unicode (multilingual), case-insensitive">utf32_unicode_ci</option>
+<option value="utf32_vietnamese_ci" title="unknown, case-insensitive">utf32_vietnamese_ci</option>
+</optgroup>
+<optgroup label="utf8" title="UTF-8 Unicode">
+<option value="utf8_bin" title="Unicode (multilingual), Binary">utf8_bin</option>
+<option value="utf8_croatian_ci" title="Croatian, case-insensitive">utf8_croatian_ci</option>
+<option value="utf8_czech_ci" title="Czech, case-insensitive">utf8_czech_ci</option>
+<option value="utf8_danish_ci" title="Danish, case-insensitive">utf8_danish_ci</option>
+<option value="utf8_esperanto_ci" title="Esperanto, case-insensitive">utf8_esperanto_ci</option>
+<option value="utf8_estonian_ci" title="Estonian, case-insensitive">utf8_estonian_ci</option>
+<option value="utf8_general_ci" title="Unicode (multilingual), case-insensitive">utf8_general_ci</option>
+<option value="utf8_general_mysql500_ci" title="Unicode (multilingual)">utf8_general_mysql500_ci</option>
+<option value="utf8_german2_ci" title="German (phone book), case-insensitive">utf8_german2_ci</option>
+<option value="utf8_hungarian_ci" title="Hungarian, case-insensitive">utf8_hungarian_ci</option>
+<option value="utf8_icelandic_ci" title="Icelandic, case-insensitive">utf8_icelandic_ci</option>
+<option value="utf8_latvian_ci" title="Latvian, case-insensitive">utf8_latvian_ci</option>
+<option value="utf8_lithuanian_ci" title="Lithuanian, case-insensitive">utf8_lithuanian_ci</option>
+<option value="utf8_persian_ci" title="Persian, case-insensitive">utf8_persian_ci</option>
+<option value="utf8_polish_ci" title="Polish, case-insensitive">utf8_polish_ci</option>
+<option value="utf8_roman_ci" title="West European, case-insensitive">utf8_roman_ci</option>
+<option value="utf8_romanian_ci" title="Romanian, case-insensitive">utf8_romanian_ci</option>
+<option value="utf8_sinhala_ci" title="unknown, case-insensitive">utf8_sinhala_ci</option>
+<option value="utf8_slovak_ci" title="Slovak, case-insensitive">utf8_slovak_ci</option>
+<option value="utf8_slovenian_ci" title="Slovenian, case-insensitive">utf8_slovenian_ci</option>
+<option value="utf8_spanish2_ci" title="Traditional Spanish, case-insensitive">utf8_spanish2_ci</option>
+<option value="utf8_spanish_ci" title="Spanish, case-insensitive">utf8_spanish_ci</option>
+<option value="utf8_swedish_ci" title="Swedish, case-insensitive">utf8_swedish_ci</option>
+<option value="utf8_turkish_ci" title="Turkish, case-insensitive">utf8_turkish_ci</option>
+<option value="utf8_unicode_520_ci" title="Unicode (multilingual)">utf8_unicode_520_ci</option>
+<option value="utf8_unicode_ci" title="Unicode (multilingual), case-insensitive">utf8_unicode_ci</option>
+<option value="utf8_vietnamese_ci" title="unknown, case-insensitive">utf8_vietnamese_ci</option>
+</optgroup>
+<optgroup label="utf8mb4" title="UTF-8 Unicode">
+<option value="utf8mb4_bin" title="Unicode (multilingual), Binary">utf8mb4_bin</option>
+<option value="utf8mb4_croatian_ci" title="Croatian, case-insensitive">utf8mb4_croatian_ci</option>
+<option value="utf8mb4_czech_ci" title="Czech, case-insensitive">utf8mb4_czech_ci</option>
+<option value="utf8mb4_danish_ci" title="Danish, case-insensitive">utf8mb4_danish_ci</option>
+<option value="utf8mb4_esperanto_ci" title="Esperanto, case-insensitive">utf8mb4_esperanto_ci</option>
+<option value="utf8mb4_estonian_ci" title="Estonian, case-insensitive">utf8mb4_estonian_ci</option>
+<option value="utf8mb4_general_ci" title="Unicode (multilingual), case-insensitive">utf8mb4_general_ci</option>
+<option value="utf8mb4_german2_ci" title="German (phone book), case-insensitive">utf8mb4_german2_ci</option>
+<option value="utf8mb4_hungarian_ci" title="Hungarian, case-insensitive">utf8mb4_hungarian_ci</option>
+<option value="utf8mb4_icelandic_ci" title="Icelandic, case-insensitive">utf8mb4_icelandic_ci</option>
+<option value="utf8mb4_latvian_ci" title="Latvian, case-insensitive">utf8mb4_latvian_ci</option>
+<option value="utf8mb4_lithuanian_ci" title="Lithuanian, case-insensitive">utf8mb4_lithuanian_ci</option>
+<option value="utf8mb4_persian_ci" title="Persian, case-insensitive">utf8mb4_persian_ci</option>
+<option value="utf8mb4_polish_ci" title="Polish, case-insensitive">utf8mb4_polish_ci</option>
+<option value="utf8mb4_roman_ci" title="West European, case-insensitive">utf8mb4_roman_ci</option>
+<option value="utf8mb4_romanian_ci" title="Romanian, case-insensitive">utf8mb4_romanian_ci</option>
+<option value="utf8mb4_sinhala_ci" title="unknown, case-insensitive">utf8mb4_sinhala_ci</option>
+<option value="utf8mb4_slovak_ci" title="Slovak, case-insensitive">utf8mb4_slovak_ci</option>
+<option value="utf8mb4_slovenian_ci" title="Slovenian, case-insensitive">utf8mb4_slovenian_ci</option>
+<option value="utf8mb4_spanish2_ci" title="Traditional Spanish, case-insensitive">utf8mb4_spanish2_ci</option>
+<option value="utf8mb4_spanish_ci" title="Spanish, case-insensitive">utf8mb4_spanish_ci</option>
+<option value="utf8mb4_swedish_ci" title="Swedish, case-insensitive">utf8mb4_swedish_ci</option>
+<option value="utf8mb4_turkish_ci" title="Turkish, case-insensitive">utf8mb4_turkish_ci</option>
+<option value="utf8mb4_unicode_520_ci" title="Unicode (multilingual)">utf8mb4_unicode_520_ci</option>
+<option value="utf8mb4_unicode_ci" title="Unicode (multilingual), case-insensitive">utf8mb4_unicode_ci</option>
+<option value="utf8mb4_vietnamese_ci" title="unknown, case-insensitive">utf8mb4_vietnamese_ci</option>
+</optgroup>
+</select>
+</fieldset><fieldset class="tblFooters"><input type="submit" name="submitcollation" value="Go" />
+</fieldset>
+</form></div>
+<div class="operations_full_width"><div class="error"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_error" /> The phpMyAdmin configuration storage has been deactivated. To find out why click <a href="http://localhost:3306/phpmyadmin/chk_rel.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa&amp;goto=db_operations.php">here</a>.</div></div></div><div class="operations_full_width"><fieldset><a href="schema_edit.php?db=Doktorantura&amp;token=92fcbd2ea72874c82a9a0d35034af7aa&amp;goto=db_operations.php"><img src="themes/dot.gif" title="" alt="" class="icon ic_b_edit" />Edit or export relational schema</a></fieldset></div></div><div id="selflink" class="print_ignore"><a href="db_operations.php?db=Doktorantura&amp;table=&amp;server=1&amp;target=&amp;token=92fcbd2ea72874c82a9a0d35034af7aa" title="Open new phpMyAdmin window" target="_blank"><img src="themes/dot.gif" title="Open new phpMyAdmin window" alt="Open new phpMyAdmin window" class="icon ic_window-new" /></a></div><script type="text/javascript">// <![CDATA[
+AJAX.cache.primer = { url: "db_operations.php?db=Doktorantura&table=&server=1&target=&token=92fcbd2ea72874c82a9a0d35034af7aa", scripts: [{"name":"jquery\/jquery-1.8.3.min.js","fire":0},{"name":"ajax.js","fire":0},{"name":"keyhandler.js","fire":1},{"name":"jquery\/jquery-ui-1.9.2.custom.min.js","fire":0},{"name":"jquery\/jquery.sprintf.js","fire":0},{"name":"jquery\/jquery.cookie.js","fire":0},{"name":"jquery\/jquery.mousewheel.js","fire":0},{"name":"jquery\/jquery.event.drag-2.2.js","fire":0},{"name":"jquery\/jquery-ui-timepicker-addon.js","fire":0},{"name":"jquery\/jquery.ba-hashchange-1.3.js","fire":0},{"name":"jquery\/jquery.debounce-1.0.5.js","fire":0},{"name":"jquery\/jquery.menuResizer-1.0.js","fire":0},{"name":"cross_framing_protection.js","fire":0},{"name":"rte.js","fire":1},{"name":"tracekit\/tracekit.js","fire":1},{"name":"error_report.js","fire":1},{"name":"doclinks.js","fire":1},{"name":"functions.js","fire":1},{"name":"navigation.js","fire":0},{"name":"indexes.js","fire":1},{"name":"common.js","fire":1},{"name":"db_operations.js","fire":1},{"name":"codemirror\/lib\/codemirror.js","fire":0},{"name":"codemirror\/mode\/sql\/sql.js","fire":0},{"name":"codemirror\/addon\/runmode\/runmode.js","fire":0}], menuHash: "b777c7ab"};
+AJAX.scriptHandler;
+$(function() {});
+// ]]></script></body></html>
